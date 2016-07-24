@@ -6,13 +6,10 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-<<<<<<< HEAD
-=======
+
   def setup
   	@user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
   end
-
-  
 
   test "name should be present" do
   	@user.name = " "
@@ -58,5 +55,5 @@ class UsersControllerTest < ActionController::TestCase
   	@user.password = @user.password_confirmation = "a" * 5
   	assert_not @user.valid?
   end
->>>>>>> sign-up
+
 end
